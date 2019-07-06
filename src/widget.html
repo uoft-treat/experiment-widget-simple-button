@@ -1,9 +1,10 @@
-<div class="demo-widget">
+<div class="simple-button">
     <button
         v-on:click="onClick"
         v-on:mousedown="onMouseDown"
         v-on:mouseup="onMouseUp"
         v-on:mousemove="onMouseMove"
+        v-bind:style="{ width: inputs.width + 'px', height: inputs.height + 'px' }"
     >
         {{ inputs.text }}
     </button>
